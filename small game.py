@@ -68,7 +68,7 @@ def draw_move(board):
         row, col = free[this]
         board[row][col] = 'X'
 
-board = [[3 * j + i + 1 for i in range(3)] for j in range(3)]  # make an empty board
+board = [[3 * j + i + 1 for i in range(3)] for j in range(3)]  
 board[1][1] = 'X'
 free = make_list_of_free_fields(board)
 human_turn =  True
